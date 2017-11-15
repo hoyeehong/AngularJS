@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="CalculatorApp">
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src= "angular.min.js"></script>
+	<script src= "app.module.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Calculator Application</title>
+</head>
+<body ng-controller="CalculatorController">
+	<div class="calcBG col-md-3 text-">
+		<small>Calculator App</small>
+		<div class="section group">
+		  <p>
+		  	<input type="number" placeholder="Enter first number" class="screen text-center" ng-model="firstNum">
+		  	<input type="number" placeholder="Enter second number" class="screen text-center" ng-model="secondNum">
+		  	<select ng-model="operator">
+		  		<option value="" selected>Select</option>
+		        <option>+</option>
+		        <option>-</option>
+		        <option>/</option>
+		        <option>*</option>
+		     </select>
+		 </p>
+		  <p>{{ result() }}</p>
+		  <br>
+		  <br>
+		</div>
+	 </div>
+</body>
+</html>
