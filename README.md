@@ -1,6 +1,6 @@
-### Calculator Application
+# Calculator Application
 
-## Walkthrough
+### Walkthrough
 
 User can enter two numeric numbers and select a dropdown list of arithmetic operations to start calculation.
 
